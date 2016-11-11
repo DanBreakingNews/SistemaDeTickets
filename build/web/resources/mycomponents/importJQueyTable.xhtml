@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+        <!-- DataTables JavaScript -->
+        <script src="/SistemaDeTickets/theme/vendor/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="/SistemaDeTickets/theme/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+        <script src="/SistemaDeTickets/theme/vendor/datatables-responsive/dataTables.responsive.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').DataTable({
+                    responsive: true,
+                    'lengthMenu': [[5, 10, 15, -1], [5, 10, 15, "Todas"]]
+                });
+            });
+        </script>
+    </cc:implementation>
+</html>

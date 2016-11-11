@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Sistema De Tickets</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="Sistema De Tickets" content=""/>
+        <meta name="DanBreakingNews" content=""/>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="./theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- MetisMenu CSS -->
+        <link href="./theme/vendor/metisMenu/metisMenu.min.css" rel="stylesheet"/>
+
+        <!-- Custom CSS -->
+        <link href="./theme/dist/css/sb-admin-2.css" rel="stylesheet"/>
+
+        <!-- Custom Fonts -->
+        <link href="./theme/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="login-panel panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Auntentificación</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h:form>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <h:inputText class="form-control" 
+                                                     value="#{loginBean.username}" 
+                                                     pt:placeholder="Usuario"
+                                                     />
+                                    </div>
+                                    <div class="form-group">
+                                        <h:inputSecret class="form-control" 
+                                                     value="#{loginBean.password}" 
+                                                     pt:placeholder="Contraseña"
+                                                     />
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="remember" type="checkbox" value="remenber">¿Recordarme?</input>
+                                        </label>
+                                    </div>
+                                    <!-- Change this to a button or input when using this as a form -->
+                                    <!--<a href="index.html" class="btn btn-lg btn-success btn-block">Ingresar</a>-->
+                                    <h:commandButton id="button" 
+                                                     value="Ingresar" 
+                                                     action="#{loginBean.doLogin}"
+                                                     class="btn btn-lg btn-success btn-block"
+                                                     />
+                                </fieldset>
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="./theme/vendor/jquery/jquery.min.js"/>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="./theme/vendor/bootstrap/js/bootstrap.min.js"/>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="./theme/vendor/metisMenu/metisMenu.min.js"/>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="./theme/dist/js/sb-admin-2.js"/>
+    </h:body> 
+</html>

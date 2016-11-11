@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="login.xhtml" x="65" y="267" zoom="true"/>
+        <Node id="welcomePrimefaces.xhtml" x="47" y="380" zoom="true"/>
+        <Node id="theme/vendor/datatables-plugins/index.html" x="650" y="150" zoom="true"/>
+        <Node id="home.xhtml" x="293" y="124" zoom="true"/>
+        <Node id="usuario.xhtml" x="400" y="300" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
